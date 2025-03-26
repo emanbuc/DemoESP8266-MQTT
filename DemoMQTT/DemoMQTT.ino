@@ -122,7 +122,7 @@ void loop() {
   if (now - lastMsg > 2000) {
     lastMsg = now;
     ++value;
-    snprintf (msg, MSG_BUFFER_SIZE, "hello world #%ld", value);
+    snprintf (msg, MSG_BUFFER_SIZE, "hello world #%ld", now/1000);
     Serial.print("Publish message: ");
     Serial.println(msg);
     client.publish("corsoiot2025/emanuele/Uptime", msg);
