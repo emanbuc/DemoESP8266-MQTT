@@ -26,7 +26,7 @@
 
 const char* ssid = SECRET_SSID;
 const char* password = SECRET_OPTIONAL_PASS;
-const char* mqtt_server = "broker.mqtt-dashboard.com";
+const char* mqtt_server = "test.mosquitto.org";
 
 WiFiClient espClient;
 PubSubClient client(espClient);
